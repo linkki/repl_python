@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<!-- HEAD SECTION-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Linkki</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!-- MAIN STYLE SECTION-->
+    <link href="assets/plugins/isotope/isotope.css" rel="stylesheet" media="screen" />
+    <link href="assets/plugins/fancybox/jquery.fancybox.css" rel="stylesheet" />
+    <link href="assets/plugins/IconHoverEffects-master/css/component.css" rel="stylesheet" />
+    <link href="assets/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/about-achivements.css" rel="stylesheet" />
+    <link id="mainStyle" href="assets/css/style.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <!-- END MAIN STYLE SECTION-->
+    <script src="assets/scripts/replExercise.js"></script>
+    <script src="assets/scripts/dom.js"></script>
+</head>
+<!-- END HEAD SECTION-->
+
+<!-- BODY SECTION-->
+
+<body>
+    <!-- HEADER SECTION-->
+    <div id="navbar">
+        <script>
+            htmlFromFile('navbar')
+        </script>
+    </div>
+    <!-- END HEADER SECTION-->
+
+    <!--PAGE CONTENT-->
+    <!-- HOMEPAGE SECTION-->
+
+    <section id="Homepage">
+        <div class="container">
+            <div class="row">
+                <div data-scrollreveal="wait 0.5s and then ease-in-out 50px" class="col-md-6 col-md-offset-3">
+
+                    <div class="align-center">
+                        <h2 class="main-text">PERUSASIAT - LASKEMINEN </h2>
+
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <section style=margin-top=20px>
+        <div class="container">
+            <div class="row">
+                <div class="">
+                    <h2>Laskutoimitukset</h2>
+
+                    Tietokone osaa tehdä laskutoimituksia Python-koodin antamien ohjeiden mukaisesti. Harjoitellaan nyt tekemään
+                    yhteen-, kerto- ja vähennyslaskuja Pythonilla.
+                    </br></br>
+                    Esimerkit ja tehvävät avautuvat painamalla sinisiä nappeja.
+                    Avaa ensin esimerkki 1, joka näyttää miten voi laskea Pythonilla.
+                    </br></br>
+                    Esimerkit ja tehtävät kannattaa suorittaa järjestyksessä.
+                    </br></br>
+                    <!---           Seuraavaksi ensin Scratch-versio lukujen 1 ja 4 summan sanomisesta, sitten Pythonilla saman tulostamisesta.
+
+         </br></br>
+         <img src="assets/img/scratch_summa.png" alt="Scratch summa 1+4"/>  </br>
+
+         </br>
+         <img src="assets/img/yhteenlasku.png" alt="print(1 + 4)"/>
+--->
+                    <script>
+                        createReplExercise(`
+                            Tässä esimerkissä tulostetaan erilaisia laskutoimituksia. Pythonissa laskeminen
+                            voi olla yhtä helppoa kuin laskimella laskeminen.
+                            </br></br>
+                            Kannattaa kokeilla muuttaa lukuja tai kirjoittaa omia laskutoimituksia.
+                            Koodaamista oppii parhaiten koodaamalla. Koodi suoritetaan uudestaan aina kun painat vihreää "run"-nappia.
+                            `,
+                            "esimerkki1", "Esimerkki 1: Laskutoimitukset",
+                            "https://repl.it/@hilipatiheijaa/laskeminenesimerkki1?lite=true")
+                    </script>
+                    </br></br>
+                    <script>
+                        createReplExercise(`
+                            Tulosta Pythonissa seuraavien laskujen tulokset järjestyksessä:
+                            </br>3 + 5
+                            </br>100 / 25
+                            </br>2019 * 3
+                            </br>23746 / 334
+                            </br>Pekalla on 256 banaania, joista hän antaa Maijalle puolet.
+                            Tämän jälkeen Pekka syö kolme banaania. Montako banaania Pekalle jää?
+                            </br></br>
+                            Voit tehdä yhden laskun kerrallaan, jokainen rivi tarkastetaan erikseen.
+                            </br>
+                            Muista, että epäonnistuminen on ok.
+                            Aja koodi rohkeasti, kun uskot että tehtävä etenee. Virheet voi korjata.
+                            </br></br>
+                            `,
+                            "tehtävä1", "Tehtävä 1: Laskutoimitukset",
+                            "https://repl.it/@hilipatiheijaa/laskeminentehtava1?lite=true")
+                    </script>
+                    </br></br>
+                    <script>
+                        createReplExercise(`
+                            Tässä esimerkissä harjoitellaan laskutoimitusten laskusääntöjä.
+                            Pythonissa laskujen laskemisen järjestys on sama kuin yleisestikin matematiikassa.
+                            </br></br>
+                            Laskut lasketaan vasemmalta oikealle mutta kertolaskut ja jakolaskut lasketaan ennen summia ja erotuksia.
+                            Laskujärjestystä voi vaihtaa käyttämällä sulkuja.
+                            `,
+                            "esimerkki2", "Esimerkki 2: Laskutoimitukset osa 2",
+                            "https://repl.it/@hilipatiheijaa/laskeminenesimerkki2?lite=true")
+                    </script>
+                    </br></br>
+                    <script>
+                        createReplExercise(`
+                          Tulosta Pythonissa seuraavien laskujen tulokset järjestyksessä:
+                          </br>3 + 5 * 2
+                          </br>(3 + 5) * 2
+                          </br>Maijalla on 512 omenaa, joista hän syö seitsemän, jonka jälkeen hän antaa Pekalle puolet
+                          jäljelläolevista banaaneista. Montako banaania Maijalle jää?
+                          </br></br>
+                          Voit tehdä yhden laskun kerrallaan, jokainen rivi tarkastetaan erikseen.
+                          </br>
+                          Muista, että epäonnistuminen on ok.
+                          Aja koodi rohkeasti, kun uskot että tehtävä etenee. Virheet voi korjata.
+                          </br></br>
+                          Jos jollain sululla ei ole vastakappaleta ohjelma ei toimi ja tulostuu Pythonin virheilmoitus:
+                          </br><code>SyntaxError: invalid syntax</code>
+                          </br>Se tarkoittaa, että kirjoitettu teksti ei ollut kelvollista Python-koodia.
+                          </br>Kannatta aina varmistaa, että sulut ovat oikein.
+                          </br></br>
+                          `,
+                            "tehtävä2", "Tehtävä 2: Laskutoimitukset osa 2",
+                            "https://repl.it/@hilipatiheijaa/laskeminentehtava2?lite=true")
+                    </script>
+
+                    <h2>Laskutoimituksen tuloksen tallentaminen muuttujaan</h2>
+                    Laskutoimituksen tuloksen voi tallentaa muuttujaan ja käyttää muuttujaa myöhemmin.
+                    Tämä tekee koodista usein helpompaa lukea ja ymmärtää.
+
+                    </br></br>
+                    Muuttujiin kannattaa tallentaa laskutoimitukset joita saattaa tarvita myöhemmin.
+                    Tällöin niitä ei tarvitse kirjoittaa uudestaan montaa kertaa.
+                    </br></br>
+
+                    <script>
+                        createReplExercise(`
+                            Tässä esimerkissä tallennetaan laskutoimituksia muuttujiin ja käytetään
+                            niitä uudestaan eri laskutoimituksissa.
+                            </br></br>
+                            Python kohtelee muuttujia, joiden arvona on jokin luku, samalla tavalla kuin muitakin lukuja,
+                            joten muuttujienkin kanssa kannattaa muistaa laskujärjestys.
+                            </br></br>
+                            Esimerkkitehtävä:
+                            </br>Paavolla on 64 mustikkaa, joista hän syö puolet ja sitten vielä yhden.
+                            </br>Siirillä on 32 mansikkaa, joista hän syö 8 ja heittää lopuista neljäsosan roskiin, koska olivat huonoja.
+                            </br>Keijolla on 16 mustikkaa, joista hän tiputtaa ja talloo vahingossa kahdeksasosan.
+                            </br>Maijulla on 8 mansikkaa, joista hän syö yhden.
+                            </br></br>
+                            Tulosta mansikoiden ja mustikoiden määrä erikseen omille riveilleen sekä marjojen yhteismäärä seuraavanlaisesti:
+                            </br>
+                            </br>Mansikoita: x
+                            </br>Mustikoita: x
+                            </br>Marjoja yhteensä: x
+                            `,
+                            "esimerkki3", "Esimerkki 3: Laskutoimitukset muuttujilla",
+                            "https://repl.it/@hilipatiheijaa/laskeminenmuuttujillaesimerkki?lite=true")
+                    </script>
+                    </br></br>
+                    <script>
+                        createReplExercise(`
+                            Villellä on 1024 kanaa. Jokainen kana munii kolme kananmunaa.
+                            Ville lahjoittaa kananmunista puolet hyväntekeväisyyteen.
+                            </br>Ville syö tämän jälkeen kanoista puolet.
+                            </br>Jokainen jäljelläoleva kana munii viisi kananmunaa.
+                            </br></br>
+                            Tallenna muuttujaan <code>villen_kananmunat</code> montako kananmunaa Villellä on.
+                            </br></br>
+                            Tehtävän alku on tehty valmiiksi. Täydennä loput.
+                            </br></br>
+                            Huomaa, että lopputuloksen täytyy olla muuttujassa <code>villen_kananmunat</code>,
+                            muuten tulee virheilmoitus.
+                            </br></br>
+                            `,
+                            "tehtävä3", "Tehtävä 3: Laskutoimitukset muuttujilla",
+                            "https://repl.it/@hilipatiheijaa/laskeminenmuuttujillatehtava?lite=true")
+                    </script>
+
+                </div>
+            </div>
+    </section>
+
+
+    <!--END HOMEPAGE SECTION-->
+
+    <!-- END FOOTER SECTION-->
+    <!-- SCROLLUP LINK SECTION-->
+    <a href="#Homepage" class="scrollup"><i class="fa fa-chevron-up"></i></a>
+    <!--END SCROLLUP LINK SECTION-->
+    <!-- STYLE SWITCHER SECTION-->
+    <div class="panel" style="color:white">
+        <div id="styledemo" style="left: 0px;">
+            <span id="theme_blue" style="background-color:#37AFFF"></span>
+            <span id="theme_green" style="background-color:#469E66"></span>
+            <span id="theme_brown" style="background-color:#E69351"></span>
+            <span id="theme_red" style="background-color:#E7484E"></span>
+        </div>
+    </div>
+    <a class="trigger" href="#"></a>
+    <!-- END STYLE SWITCHER SECTION-->
+    <!-- MAIN SCRIPTS SECTION-->
+    <script src="assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/scrollReveal.js"></script>
+    <script>
+        window.scrollReveal = new scrollReveal(); //please put this script here to show animation at the time of scroll
+    </script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/plugins/isotope/jquery.isotope.min.js"></script>
+    <script src="assets/plugins/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="assets/js/jquery.localscroll-1.2.7-min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/scripts/main.js"></script>
+
+    <!--END MAIN SCRIPTS SECTION-->
+</body>
+
+<!--END  BODY SECTION-->
+
+</html>
