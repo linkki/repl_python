@@ -10,6 +10,7 @@
 <head>
     <meta charset="utf-8">
     <title>Linkki</title>
+    <base href="https://linkki.github.io/">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -33,13 +34,13 @@
     <!-- HEADER SECTION-->
     <div id="navbar">
         <script>
-            htmlFromFile('navbar')
+            htmlFromFile('navbar', 'assets/shared_html/navbar.html')
         </script>
     </div>
     <!-- END HEADER SECTION-->
 
-    <!--PAGE CONTENT-->
-    <!-- HOMEPAGE SECTION-->
+
+    <!-- PAGE CONTENT-->
 
     <section id="Homepage">
         <div class="container">
@@ -71,10 +72,10 @@
                     <!---           Seuraavaksi ensin Scratch-versio lukujen 1 ja 4 summan sanomisesta, sitten Pythonilla saman tulostamisesta.
 
          </br></br>
-         <img src="assets/img/scratch_summa.png" alt="Scratch summa 1+4"/>  </br>
+         <img src="../../../assets/img/scratch_summa.png" alt="Scratch summa 1+4"/>  </br>
 
          </br>
-         <img src="assets/img/yhteenlasku.png" alt="print(1 + 4)"/>
+         <img src="../../../assets/img/yhteenlasku.png" alt="print(1 + 4)"/>
 --->
                     <script>
                         createReplExercise(`
@@ -207,13 +208,13 @@
     </section>
 
 
-    <!--END HOMEPAGE SECTION-->
+    <!--END PAGE CONTENT-->
 
     <!-- END FOOTER SECTION-->
-    <!-- SCROLLUP LINK SECTION-->
+    <!-- SCROLLUP LINK SECTION
     <a href="#Homepage" class="scrollup"><i class="fa fa-chevron-up"></i></a>
-    <!--END SCROLLUP LINK SECTION-->
-    <!-- STYLE SWITCHER SECTION-->
+    END SCROLLUP LINK SECTION-->
+    <!-- STYLE SWITCHER SECTION
     <div class="panel" style="color:white">
         <div id="styledemo" style="left: 0px;">
             <span id="theme_blue" style="background-color:#37AFFF"></span>
@@ -223,7 +224,7 @@
         </div>
     </div>
     <a class="trigger" href="#"></a>
-    <!-- END STYLE SWITCHER SECTION-->
+    END STYLE SWITCHER SECTION-->
     <!-- MAIN SCRIPTS SECTION-->
     <script src="assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <script src="assets/js/jquery.js"></script>
@@ -237,7 +238,7 @@
     <script src="assets/plugins/fancybox/jquery.fancybox.pack.js"></script>
     <script src="assets/js/jquery.localscroll-1.2.7-min.js"></script>
     <script src="assets/js/jquery.appear.js"></script>
-    <script src="assets/scripts/main.js"></script>
+    <!-- <script src="assets/scripts/main.js"></script> -->
 
     <!--END MAIN SCRIPTS SECTION-->
 </body>

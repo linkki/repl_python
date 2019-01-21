@@ -5,13 +5,15 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js">
 <!--<![endif]-->
-      <!-- HEAD SECTION-->
+<!-- HEAD SECTION-->
+
 <head>
     <meta charset="utf-8">
     <title>Linkki</title>
+    <base href="https://linkki.github.io/">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <!-- MAIN STYLE SECTION-->
     <link href="assets/plugins/isotope/isotope.css" rel="stylesheet" media="screen" />
     <link href="assets/plugins/fancybox/jquery.fancybox.css" rel="stylesheet" />
@@ -21,21 +23,24 @@
     <link id="mainStyle" href="assets/css/style.css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     <!-- END MAIN STYLE SECTION-->
+    <script src="assets/scripts/replExercise.js"></script>
     <script src="assets/scripts/dom.js"></script>
 </head>
 <!-- END HEAD SECTION-->
 
-     <!-- BODY SECTION-->
+<!-- BODY SECTION-->
+
 <body>
-
-     <!-- HEADER SECTION-->
+    <!-- HEADER SECTION-->
     <div id="navbar">
-      <script>htmlFromFile('navbar')</script>
+        <script>
+            htmlFromFile('navbar', 'assets/shared_html/navbar.html')
+        </script>
     </div>
-     <!-- END HEADER SECTION-->
+    <!-- END HEADER SECTION-->
 
-    <!--PAGE CONTENT-->
-    <!-- HOMEPAGE SECTION-->
+
+    <!-- PAGE CONTENT-->
 
     <section id="Homepage">
         <div class="container">
@@ -98,23 +103,23 @@
             <h2><a href="tulostus_ja_muuttujat.html">Aloita tekeminen painamalla tästä</a></h2>
         </div>
     </section>
-     <!--END HOMEPAGE SECTION-->
+     <!--END PAGE CONTENT-->
 
-     <!-- END FOOTER SECTION-->
-     <!-- SCROLLUP LINK SECTION-->
+    <!-- END FOOTER SECTION-->
+    <!-- SCROLLUP LINK SECTION
     <a href="#Homepage" class="scrollup"><i class="fa fa-chevron-up"></i></a>
-     <!--END SCROLLUP LINK SECTION-->
-    <!-- STYLE SWITCHER SECTION-->
-    <div  class="panel" style="color:white">
-        <div id="styledemo"  style="left: 0px;">
-		<span id="theme_blue" style="background-color:#37AFFF" ></span>
-		<span id="theme_green" style="background-color:#469E66" ></span>
-		<span id="theme_brown" style="background-color:#E69351" ></span>
-		<span id="theme_red" style="background-color:#E7484E" ></span>
-            </div>
-</div>
-<a class="trigger" href="#"></a>
-    <!-- END STYLE SWITCHER SECTION-->
+    END SCROLLUP LINK SECTION-->
+    <!-- STYLE SWITCHER SECTION
+    <div class="panel" style="color:white">
+        <div id="styledemo" style="left: 0px;">
+            <span id="theme_blue" style="background-color:#37AFFF"></span>
+            <span id="theme_green" style="background-color:#469E66"></span>
+            <span id="theme_brown" style="background-color:#E69351"></span>
+            <span id="theme_red" style="background-color:#E7484E"></span>
+        </div>
+    </div>
+    <a class="trigger" href="#"></a>
+    END STYLE SWITCHER SECTION-->
     <!-- MAIN SCRIPTS SECTION-->
     <script src="assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <script src="assets/js/jquery.js"></script>
@@ -128,11 +133,11 @@
     <script src="assets/plugins/fancybox/jquery.fancybox.pack.js"></script>
     <script src="assets/js/jquery.localscroll-1.2.7-min.js"></script>
     <script src="assets/js/jquery.appear.js"></script>
-    <script src="assets/scripts/main.js"></script>
+    <!-- <script src="assets/scripts/main.js"></script> -->
 
-
-     <!--END MAIN SCRIPTS SECTION-->
+    <!--END MAIN SCRIPTS SECTION-->
 </body>
 
-    <!--END  BODY SECTION-->
+<!--END  BODY SECTION-->
+
 </html>

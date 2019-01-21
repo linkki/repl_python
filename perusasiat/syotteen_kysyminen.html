@@ -10,6 +10,7 @@
 <head>
     <meta charset="utf-8">
     <title>Linkki</title>
+    <base href="https://linkki.github.io/">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -33,13 +34,13 @@
     <!-- HEADER SECTION-->
     <div id="navbar">
         <script>
-            htmlFromFile('navbar')
+            htmlFromFile('navbar', 'assets/shared_html/navbar.html')
         </script>
     </div>
     <!-- END HEADER SECTION-->
 
-    <!--PAGE CONTENT-->
-    <!-- HOMEPAGE SECTION-->
+
+    <!-- PAGE CONTENT-->
 
     <section id="Homepage">
         <div class="container">
@@ -48,10 +49,10 @@
 
                     <div class="align-center">
                         <h2 class="main-text"> Syötteen kysyminen </h2>
-
                     </div>
                 </div>
             </div>
+        </div>
 
     </section>
     <section style=margin-top=20px>
@@ -59,21 +60,65 @@
             <div class="row">
                 <div class="">
                     <!-- CONTENT HERE -->
-                    <h2>
-                      Tämä osio ei ole vielä valmis. Vanha materiaali löytyy <a href="https://linkki.github.io/python2017/perusasiat.html">täältä</a>.
-                    </h2>
+                    <h2>Syöte</h2>
+                    Nyt osaamme jo tulostaa muuttujan sekä tekstiä ja laskuja.
+                    Voimmekin alkaa tekemään ohjelmaa, jossa käytetään syötteitä.
+                    Syötteet tarkoittavat käyttäjän ohjelmalle syöttämää tietoa.
+                    </br></br>
+
+                    Syötteet tallennetaan yleensä muuttujiin, jonka jälkeen niitä voi käsitellä,
+                    kuten ensimmäisessä esimerkissä näemme.
+                    </br></br>
+                    <script>
+                        createReplExercise(`
+                            Tässä esimerkissä kysytään käyttäjältä syötteenä merkkijono.
+                            </br></br>
+                            Merkkijono tallenetaan muuttujaan jolloin sitä voi käsitellä muun ohjelman osana.
+                            Syötettä kysytään käyttämällä funktiota <code>input()</code>.
+                            Ohjelma odottaa kunnes käyttäjä syöttää syötteen.
+                            Syötteet annetaan samaan paikkaan kuin mihin <code>print()</code> tulostaa.
+                            </br></br>
+                            Funktioiden nimet ovat yleensä loogisia ja vastaavat niiden käyttötarkoitusta.
+                            Tässä tapauksessa funktion nimi "input" tulee englannin kielestä ja tarkoittaa "syöte".
+                            </br></br>
+                            Tässä vaiheessa varmaankin on jo selvää, että koodi lähtee käyntiin vihreästä "run"-napista.
+                            `,
+                            "esimerkki1", "Esimerkki 1: Merkkijonon lukeminen",
+                            "https://repl.it/@hilipatiheijaa/syoteesimerkki1?lite=true")
+                    </script>
+                    </br></br>
+                    Mitäpä Entä jos haluaisimme tehdä laskutoimituksen, jonka luvut riippuvat käyttäjästä? Haluaisimme siis, että käyttäjä voisi antaa kaksi
+                    lukua ja tietokone voisi laskea esimerkiksi niiden yhteenlaskun.
+                    </br></br>
+                    <script>
+                        createReplExercise(`
+                            Tässä esimerkissä kysytään käyttäjältä syötteenä kokonaisluku.
+                            </br></br>
+                            Kokonaisluku kysytään käyttäjältä samalla tavalla kuin merkkijonokin.
+                            Kuitenkin jotain pitää tehdä välissä, sillä funktio <code>input()</code> antaa vain merkkijonoja.
+                            </br></br>
+                            Merkkijonon voi muuttaa Pythonissa kokonaisluvuksi käyttämällä funktiota <code>int()</code>.
+                            Tämä kuitenkin edellyttää, että merkkijono kuvaa kokonaislukua, muuten tulee virheilmoitus.
+                            </br></br>
+                            `,
+                            "esimerkki2", "Esimerkki 2: Kokonaisluvun lukeminen",
+                            "https://repl.it/@hilipatiheijaa/syoteesimerkki2?lite=true")
+                    </script>
+                    </br></br>
+
                 </div>
             </div>
+        </div>
     </section>
 
 
-    <!--END HOMEPAGE SECTION-->
+    <!--END PAGE CONTENT-->
 
     <!-- END FOOTER SECTION-->
-    <!-- SCROLLUP LINK SECTION-->
+    <!-- SCROLLUP LINK SECTION
     <a href="#Homepage" class="scrollup"><i class="fa fa-chevron-up"></i></a>
-    <!--END SCROLLUP LINK SECTION-->
-    <!-- STYLE SWITCHER SECTION-->
+    END SCROLLUP LINK SECTION-->
+    <!-- STYLE SWITCHER SECTION
     <div class="panel" style="color:white">
         <div id="styledemo" style="left: 0px;">
             <span id="theme_blue" style="background-color:#37AFFF"></span>
@@ -83,7 +128,7 @@
         </div>
     </div>
     <a class="trigger" href="#"></a>
-    <!-- END STYLE SWITCHER SECTION-->
+    END STYLE SWITCHER SECTION-->
     <!-- MAIN SCRIPTS SECTION-->
     <script src="assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <script src="assets/js/jquery.js"></script>
@@ -97,7 +142,7 @@
     <script src="assets/plugins/fancybox/jquery.fancybox.pack.js"></script>
     <script src="assets/js/jquery.localscroll-1.2.7-min.js"></script>
     <script src="assets/js/jquery.appear.js"></script>
-    <script src="assets/scripts/main.js"></script>
+    <!-- <script src="assets/scripts/main.js"></script> -->
 
     <!--END MAIN SCRIPTS SECTION-->
 </body>

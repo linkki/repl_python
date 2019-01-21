@@ -10,6 +10,7 @@
 <head>
     <meta charset="utf-8">
     <title>Linkki</title>
+    <base href="https://linkki.github.io/">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -22,7 +23,6 @@
     <link id="mainStyle" href="assets/css/style.css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     <!-- END MAIN STYLE SECTION-->
-
     <script src="assets/scripts/replExercise.js"></script>
     <script src="assets/scripts/dom.js"></script>
 </head>
@@ -34,13 +34,13 @@
     <!-- HEADER SECTION-->
     <div id="navbar">
         <script>
-            htmlFromFile('navbar')
+            htmlFromFile('navbar', 'assets/shared_html/navbar.html')
         </script>
     </div>
     <!-- END HEADER SECTION-->
 
-    <!--PAGE CONTENT-->
-    <!-- HOMEPAGE SECTION-->
+
+    <!-- PAGE CONTENT-->
 
     <section id="Homepage">
         <div class="container">
@@ -86,7 +86,7 @@
                     Paina alla olevaa sinistä nappia avataksesi esimerkin, joka näyttää miten tulostaminen tapahtuu Python-kielellä.
                     <!---      <div style="display: flex; flex: 1 1;">
                 <h3 style="flex-grow: 1">Scratch-referenssi</h3>
-                <img src="assets/img/scratch_heimaailma.png" alt="Scratch Hei maailma" style="margin: 20px 20px 0px 0px;"/>
+                <img src="../../../assets/img/scratch_heimaailma.png" alt="Scratch Hei maailma" style="margin: 20px 20px 0px 0px;"/>
               </div>
               <br/>
               Tulostamista Pythonissa voi ajatella hieman samankaltaisena asiana kuin Scratchissa sanomista. Pythonissa ei lähtökohtaisesti ole hahmoja kuten Scratchissa, pelihahmojen luonti vaatii monimutkaisempia komentoja joita opetellaan vasta myöhemmin.
@@ -149,14 +149,14 @@
 
                     </br></br>
 
-                    <img src="assets/img/muuttujalaatikko2.png" /> </br></br>
+                    <img src="../../../assets/img/muuttujalaatikko2.png" /> </br></br>
 
                     Nyt laitamme laatikoihin sisältöä. Laatikko jonka nimi on x, saa sisällökseen numeron 1. Laatikko jonka nimi on paikka, saa sisällökseen
                     Kumpula.
 
 
                     </br></br>
-                    <img src="assets/img/muuttujalaatikko_sisältö2.png" /> </br></br>
+                    <img src="../../../assets/img/muuttujalaatikko_sisältö2.png" /> </br></br>
 
                     <!---         Pythonissa muuttujiin voi tallentaa mitä tahansa Pythonin tietotyyppejä, aivan kuin laatikoihinkin voi laittaa mitä tahansa.
            Tietotyyppejä ovat esimerkiksi luku ja merkkijono.
@@ -165,7 +165,7 @@
            sen jälkeen sama Pythonissa.
 
          </br></br>
-          <img src="assets/img/scratch_muuttujat.png" /> </br></br>
+          <img src="../../../assets/img/scratch_muuttujat.png" /> </br></br>
           </br>
 
            Pythonissa muuttujia ei tarvitse ensin erikseen luoda, vaan niiden luonti tapahtuu kun niihin ensimmäisen kerran asetetaan arvo.
@@ -237,13 +237,13 @@
 
     </section>
 
-    <!--END HOMEPAGE SECTION-->
+    <!--END PAGE CONTENT-->
 
     <!-- END FOOTER SECTION-->
-    <!-- SCROLLUP LINK SECTION-->
+    <!-- SCROLLUP LINK SECTION
     <a href="#Homepage" class="scrollup"><i class="fa fa-chevron-up"></i></a>
-    <!--END SCROLLUP LINK SECTION-->
-    <!-- STYLE SWITCHER SECTION-->
+    END SCROLLUP LINK SECTION-->
+    <!-- STYLE SWITCHER SECTION
     <div class="panel" style="color:white">
         <div id="styledemo" style="left: 0px;">
             <span id="theme_blue" style="background-color:#37AFFF"></span>
@@ -252,9 +252,9 @@
             <span id="theme_red" style="background-color:#E7484E"></span>
         </div>
     </div>
-    <!-- END STYLE SWITCHER SECTION-->
-    <!-- MAIN SCRIPTS SECTION-->
     <a class="trigger" href="#"></a>
+    END STYLE SWITCHER SECTION-->
+    <!-- MAIN SCRIPTS SECTION-->
     <script src="assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/scrollReveal.js"></script>
@@ -267,7 +267,8 @@
     <script src="assets/plugins/fancybox/jquery.fancybox.pack.js"></script>
     <script src="assets/js/jquery.localscroll-1.2.7-min.js"></script>
     <script src="assets/js/jquery.appear.js"></script>
-    <script src="assets/scripts/main.js"></script>
+    <!-- <script src="assets/scripts/main.js"></script> -->
+
     <!--END MAIN SCRIPTS SECTION-->
 </body>
 

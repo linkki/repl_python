@@ -1,5 +1,5 @@
-function htmlFromFile(f) {
-  fetch(f + '.html')
+function htmlFromFile(id, f) {
+  fetch(f)
   .then(response => response.text())
-  .then(text => document.getElementById(f).innerHTML = text.trim())
+  .then(text => document.getElementById(id).innerHTML = text.trim())
 }
