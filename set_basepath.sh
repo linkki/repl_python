@@ -1,5 +1,5 @@
 #!/bin/sh
-prod_base_path="https://linkki.github.io/"
+prod_base_path="https://linkki.github.io/repl_python/"
 local_base_path="http://localhost:"
 local_port="8000" || $2
 
