@@ -7,7 +7,7 @@ update_base_path() {
   base_path=$1
   sed -i 's,<base href=".*">,<base href="'"${base_path}"'">,' template.html \
   && echo "Base path is now: $1"
-  python3 update_html.py index.html perusasiat/*
+  python3 invoke_template_update.py index.html turtle.html perusasiat/*
 }
 
 [ "$1" = "prod" ] && update_base_path ${prod_base_path} && exit 0

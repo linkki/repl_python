@@ -116,6 +116,78 @@
                             "https://repl.it/@hilipatiheijaa/salasanavahti?lite=true")
                     </script>
                     </br></br>
+                    Seuraavaksi harjoitellaan syötteiden vertailua tekemällä älykkyystesti.
+                    </br></br>
+                    <script>
+                        createReplExercise(`
+                            Tässä tehtävässä tehdään älykkyystesti, jossa on kolme tehtävää.
+                            </br></br>
+                            </br>Tehtävä yksi:
+                            </br>Tulosta <code>'Tämä on älykkyystesti: valitse numero väliltä 1-3'</code> ja kysy käyttäjältä syötettä komennolla <code>input()</code>
+                            </br>Jos syöte on välillä 1-3, tulosta <code>'Hienoa, osasit valita numeron {syöte}'</code> (laita tekstin <code>{syöte}</code> paikalle käyttäjän antama syöte).
+                            </br>Muuten, tulosta <code>'Höh, et osannut edes kirjoittaa oikeaa numeroa.'</code>
+                            </br><br/>
+                            Tehtävä kaksi:
+                            <br/>Tulosta <code>'Kirjoita "256 / 2 = x".'</code> ja kysy käyttäjältä syötettä.
+                            <br/>Jos syöte on sama kuin <code>'"256 / 2 = x."'</code>, tulosta <code>'Hienoa, osasit kirjoittaa "256 / 2 = x".'</code>
+                            <br/>Muuten, tulosta 'Hmph, et osannut edes kirjoittaa helppoa yhtälöä.'
+                            <br/></br>
+                            Tehtävä kolme:
+                            <br/>Tulosta: <code>'Älä kirjoita mitään...'</code> ja kysy käyttäjältä syötettä.
+                            <br/>Jos syöte ei ole <code>'mitään'</code>, tulosta <code>'Hienoa, osasit olla kirjoittamatta mitään, {syöte} ei ole mitään'</code>
+                            <br/>Muuten, tulosta <code>'Möh, et osannut edes olla kirjoittamatta mitään.'</code>
+                            <br/><br/>
+                            Kun saat tehtävän valmiiksi voit halutessasi tehdä omanlaisen älykkyystestisi.
+                            <br/><br/>
+                            Tehtävän valmiit testausrivit voi kommentoida pois kirjoittamalla merkin <code>#</code> rivien
+                            <br/><code>from testi import input, aja_testi # ...</code> ja
+                            <br/><code>aja_testi() # ...</code>
+                            <br/>eteen. <br/>Tällöin tulostus palautuu normaaliksi. Normaalista tulostamisesta voi olla myös hyötyä, kun yrität tehdä tehtäviä ja
+                            huomaat että jotain on pielessä. Tehtävien tarkistukset saa takaisin poistamalla lisätyt <code>#</code>-merkit rivien edestä.
+
+                            <br/><br/>
+                            Koodi jonka haluaa väliaikaisesti pois käytöstä, kannattaa aina kommentoida tai kopioida hetkeksi johonkin muualle, esimerkiksi tekstitiedostoon.
+                            `,
+                            "tehtävä1", "Tehtävä 1: Älykkyystesti",
+                            "https://repl.it/@hilipatiheijaa/alykkyystesti?lite=true")
+                    </script>
+                    </br></br>
+
+                    Seuraavassa tehtävässä ei ole automaattisia tarkistuksia, mutta näet kyllä ohjelman tulostuksesta itse
+                    miten ohjelma toimii.
+                    <br/><br/>
+                    <script>
+                        createReplExercise(`
+                            Tässä tehtävässä on tarkoitus tehdä sanaseikkailupeli.
+                            </br></br>
+                            Tehtävä on pitkä ja siksi se kannattaa tehdä osissa.
+                            Jos jokin kohta on hankala, voit tarkistaa aiemmista osioista miten asiat kuuluu tehdä
+                            tai kysyä apua.
+                            </br></br>
+                            Osa 1:
+                            </br>Kysy käyttäjältä "Olet aulassa. Edessäsi on liuta ovia. Minkä oven valitset? (1-5)?"
+                            </br>Jos valinta on 1, tulosta "Rhaargh! Sinut söi hirviö!"
+                            </br>Jos valinta on 2, tulosta "Pääsit yläkertaan."
+                            </br>Jos valinta on suurempi kuin 2 ja pienempi tai yhtä suuri kuin 6, tulosta "Tämä olikin käytävä takaisin aulaan, takaasi ilmestyi hirviö ja söi sinut!"
+                            </br>Jos valinta on jokin muu, tulosta "Et valinnut mitään ovista, takaasi ilmestyi hirviö ja söi sinut!"
+                            </br></br>
+                            Osa 2:
+                            </br>Jos käyttäjä vastasi 2, tulosta "Jatkatko portaiden yläpäässä vai päätätkö pelin?"
+                            "Pääsit yläkertaan."-tulostuksen jälkeen.
+                            </br>Kysy käyttäjältä suuntaa "Portaiden välissä on ovi, menetkö ovesta vai jatkatko ylös? (ovi, ylös)"
+                            </br>Jos valinta on "ovi", tulosta "Voi ei! Lattiassa oli reikä ja tipuit ansaan!"
+                            </br>Jos valinta on "ylös", tulosta "Löysit karkkivaraston!"
+                            </br>Jos valinta on jotain muuta, tulosta "Jäit paikallesi, takaasi ilmestyi hirviö ja söi sinut!"
+                            </br></br>
+                            Kun saat ohjelman toimimaan, voit halutessasi muokata siitä omanlaisesi.
+                            `,
+
+                            "tehtava2", "Tehtävä 2: Sanaseikkailu",
+                            "https://repl.it/@hilipatiheijaa/sanaseikkailu?lite=true")
+                    </script>
+                    </br></br>
+
+
                 </div>
             </div>
         </div>
