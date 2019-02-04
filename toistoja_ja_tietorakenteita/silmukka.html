@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+<!-- HEAD SECTION-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Linkki</title>
+    <base href="https://linkki.github.io/repl_python/">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!-- MAIN STYLE SECTION-->
+    <link href="assets/plugins/isotope/isotope.css" rel="stylesheet" media="screen" />
+    <link href="assets/plugins/fancybox/jquery.fancybox.css" rel="stylesheet" />
+    <link href="assets/plugins/IconHoverEffects-master/css/component.css" rel="stylesheet" />
+    <link href="assets/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/about-achivements.css" rel="stylesheet" />
+    <link id="mainStyle" href="assets/css/style.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <!-- END MAIN STYLE SECTION-->
+    <script src="assets/scripts/replExercise.js"></script>
+    <script src="assets/scripts/dom.js"></script>
+</head>
+<!-- END HEAD SECTION-->
+
+<!-- BODY SECTION-->
+
+<body>
+    <!-- HEADER SECTION-->
+    <div id="navbar">
+        <script>
+            htmlFromFile('navbar', 'assets/shared_html/navbar.html')
+        </script>
+    </div>
+    <!-- END HEADER SECTION-->
+
+
+    <!-- PAGE CONTENT-->
+
+    <section id="Homepage">
+        <div class="container">
+            <div class="row">
+                <div data-scrollreveal="wait 0.5s and then ease-in-out 50px" class="col-md-6 col-md-offset-3">
+
+                    <div class="align-center">
+                        <h2 class="main-text">Silmukka</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style=margin-top=20px>
+        <div class="container">
+            <div class="row">
+                <div class="">
+                  <h2>Toistaminen</h2>
+                  Tähän asti olemme ohjanneet Python-ohjelmia vain if-lauseilla eli ehtolauseilla.
+                  Jos on haluttu esimerkiksi kirjoittaa jokin asia kahdesti, se on kirjoitettu kahdesti.
+                </br></br>
+                  Tämä on kuitenkin äärimmäisen työlästä. Jos haluamme esimerkiksi tulostaa luvut yhdestä
+                  kymmeneentuhanteen, kirjoittamalla käsin kaikki numerot menisi sekä ikä että (mielen)terveys:
+                </br></br>
+                  <code>print(1)</code></br>
+                  <code>print(2)</code></br>
+                  ... (9997 print-komentoa tähän väliin)</br>
+                  <code>print(10000)</code></br>
+                  </br></br>
+
+                  Käsin kirjoittamisessa on lisäksi sellainen ongelma, että täytyy myös tarkastaa käsin
+                  kaikki numerot, että ne tulee kirjoitettua oikein. Siinä se järki vasta katoaisikin.
+                  </br></br>
+                  Kekseliäät saattavat keksiä, että copy-pasteamalla, eli leikkaamalla ja liimaamalla koodia asian
+                  voi ratkaista, jos osaa käyttää muuttujia ovelasti:
+                </br>
+                  Ensin alustetaan muuttuja <code>x</code>,</br>
+                  <code>x = 1</code></br>
+                  sitten toistetaan tulostamista ja muuttujan kasvattamista yhdellä, kunnes tulostuu luku 10000:</br>
+
+                  <code>print(x)</code></br>
+                  <code>x = x + 1</code></br>
+                  <code>print(x)</code></br>
+                  <code>x = x + 1</code></br>
+                  <code>print(x)</code></br>
+                  ...</br></br>
+                  Helppoa, eikö? </br>Ei ehkä tarpeeksi.
+                  Saman koodin toistaminen on kuitenkin edelleen hieman työlästä. Etenkin sitä on työlästä lukea ja muokata.
+                  Jos yhden rivin korkeus ruudulla olisi kaksi millimetriä, koodia tulisi ruudulle yhteensä <code>2 * 2 / 1000m * 10000 = 40m</code>
+                  eli 40 metriä koodia. Ei kiva.
+                </br></br>
+                Onneksi Pythonissa on mahdollisuus toistaa kirjoitettua koodia ohjelmallisesti käyttäen toistolauseita.
+
+                <h2>While-silmukka</h2>
+                While-silmukka eli "kunnes-silmukka" on toistolause, joka toistaa sen sisällä olevaa koodia, kunnes se lopetetaan.
+                Seuraavassa esimerkissä nähdään miten while-silmukka helpottaa elämää toistettavan koodin kanssa.
+              </br></br>
+              <script>
+                  createReplExercise(`
+                   While-silmukalla voi toistaa helposti koodirivejä.
+                   Tässä esimerkissä nähdään miten koodausta voi helpottaa toistolla.
+                   </br></br>
+                   Esimerkin silmukka joka pyörii, kunnes koodi törmää lopetuslauseeseen</br>
+                   </break>.
+                   </br></br>
+                   Samoin kuin if-lauseessa, while-silmukan sisältö määräytyy sisentämällä.
+                   </br></br>
+               `,
+                      "esimerkki1", "Esimerkki 1: While-silmukka", "https://repl.it/@hilipatiheijaa/whileesimerkki?lite=true")
+              </script>
+              </br></br>
+              <script>
+                  createReplExercise(`
+                   Tulosta luvut yhdestä tuhanteen.
+                   </br></br>
+                   Tulostaminen on hidasta, tehtävän tarkastuksessa voi kestää hetki.
+                   </br></br>
+               `,
+                      "tehtavat1", "Tehtävä 1: Paljon lukuja", "https://repl.it/@hilipatiheijaa/whilelukutulostustehtava?lite=true")
+              </script>
+              </br></br>
+
+              <script>
+                  createReplExercise(`
+                   While-silmukalle voi antaa ehtoja samalla tavoin kuin if-lauseelle.
+                   Edellisessä esimerkissä käytimme ehtoa <code>True</code> eli ehto oli aina tosi.
+                   Tässä esimerkissä annetaan while-silmukalle ehto, jolloin ei tarvita lopetuslausetta <code>break</code>.
+                   </br>Voit itse aina valita milloin haluat käyttää lopetuslausetta ja ehtoa.
+                   </br></br>
+                   Esimerkin silmukka pyörii niin kauan, kunnes annettu ehto on epätosi.
+                   </br></br>
+               `,
+                      "esimerkki2", "Esimerkki 2: While-silmukka ehdolla", "https://repl.it/@hilipatiheijaa/whileesimerkki2?lite=true")
+              </script>
+              </br></br>
+                    <!-- CONTENT HERE -->
+              <script>
+                  createReplExercise(`
+                   Tässä esimerkissä on edellisen sanaseikkailun kaltainen peli, mutta
+                   tällä käytetään silmukoita. Tällöin pelistä voidaan tehdä hieman älykkäämpi.
+                   </br></br>
+               `,
+                      "esimerkki3", "Esimerkki 3: Sanaseikkailu", "https://repl.it/@hilipatiheijaa/whilesanaseikkailuesimerkki?lite=true")
+              </script>
+              </br></br>
+              <script>
+                  createReplExercise(`
+                   Tässä tehtävässä voit tehdä oman sanaseikkailusi käyttäen while-silmukoita.
+                   Voit myös muokata aiempaa sanaseikkailutehtävää tai kopioida sen tähän.
+                   </br></br>
+               `,
+                      "tehtava2", "Tehtävä 2: Vapaa sanaseikkailu", "https://repl.it/@hilipatiheijaa/vapaasanaseikkailutehtava?lite=true")
+              </script>
+              </br></br>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--END PAGE CONTENT-->
+
+    <!-- END FOOTER SECTION-->
+    <!-- SCROLLUP LINK SECTION
+    <a href="#Homepage" class="scrollup"><i class="fa fa-chevron-up"></i></a>
+    END SCROLLUP LINK SECTION-->
+    <!-- STYLE SWITCHER SECTION
+    <div class="panel" style="color:white">
+        <div id="styledemo" style="left: 0px;">
+            <span id="theme_blue" style="background-color:#37AFFF"></span>
+            <span id="theme_green" style="background-color:#469E66"></span>
+            <span id="theme_brown" style="background-color:#E69351"></span>
+            <span id="theme_red" style="background-color:#E7484E"></span>
+        </div>
+    </div>
+    <a class="trigger" href="#"></a>
+    END STYLE SWITCHER SECTION-->
+    <!-- MAIN SCRIPTS SECTION-->
+    <script src="assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/scrollReveal.js"></script>
+    <script>
+        window.scrollReveal = new scrollReveal(); //please put this script here to show animation at the time of scroll
+    </script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/plugins/isotope/jquery.isotope.min.js"></script>
+    <script src="assets/plugins/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="assets/js/jquery.localscroll-1.2.7-min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <!-- <script src="assets/scripts/main.js"></script> -->
+
+    <!--END MAIN SCRIPTS SECTION-->
+</body>
+
+<!--END  BODY SECTION-->
+
+</html>
