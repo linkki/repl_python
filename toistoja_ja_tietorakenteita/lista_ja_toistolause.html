@@ -48,7 +48,7 @@
                 <div data-scrollreveal="wait 0.5s and then ease-in-out 50px" class="col-md-6 col-md-offset-3">
 
                     <div class="align-center">
-                        <h2 class="main-text">Python Turtle </h2>
+                        <h2 class="main-text"> LISTA </h2>
 
                     </div>
                 </div>
@@ -60,42 +60,69 @@
             <div class="row">
                 <div class="">
                     <!-- CONTENT HERE -->
-                    <h2>Piirtäminen</h2>
-                    Python turtle on ohjelmoinnin opetusta varten tehty Python-ohjelma, jolla
-                    voi piirtää kuvioita helposti. Tehtävissä ei ole automaattisia tarkastuksia,
-                    mutta tulokset on helppo tarkistaa omin silmin.
+                    <h2>Lista</h2>
+                    Lista on ensimmäinen pythonin tietorakenne johon tutustumme.
+                    Tietorakenne tarkoittaa datan eli tiedon tallenustapaa,
+                    joka mahdollistaa datan helpon käyttämisen.
                     </br></br>
-                    Esimerkistä näet miten turtlea voi piirtää neliön.
-                  </br></br>
-                  <script>
-                      createReplExercise(`
-                          Tässä esimerkissä piirretään neliö.
-                          </br></br>
-                          `,
-                          "esimerkki1", "Esimerkki 1: neliö",
-                          "https://repl.it/@hilipatiheijaa/turtlenelio?lite=true")
-                  </script>
-                  </br></br>
-                  <script>
-                      createReplExercise(`
-                          Tehtävänäsi on piirtää kilpikonnalla kolmio.
-                          Montako astetta kilpparin pitäisi kääntyä kerrallaan, jotta piirtyy kolmio?
-                          </br>Vihje: Ympyrän asteluku jaettuna kulmien määrällä
-                          </br></br>
-                          `,
-                          "tehtävä1", "Tehtävä 1: kolmio",
-                          "https://repl.it/@hilipatiheijaa/kolmiotehtava?lite=true")
-                  </script>
-                  </br></br>
-                  <script>
-                      createReplExercise(`
-                          Tehtävänäsi on piirtää kilpikonnalla kuusikulmio.
-                          Tehtävän 1 vihjeestä on hyötyä tässäkin.
-                          </br></br>
-                          `,
-                          "tehtävä2", "Tehtävä 2: kuusikulmio",
-                          "https://repl.it/@hilipatiheijaa/kuusikulmiotehtava?lite=true")
-                  </script>
+                    Lista on kätevä tietorakenne, koska sen avulla voi helposti
+                    tallentaa ja käydä läpi suuria määriä asioita ohjelmakoodissa.
+                    </br></br>
+                    Listaan tallennettuja asioita kutsutaan listan alkioiksi.
+                    Seuraavassa esimerkissä tarkastellaan miten lista luodaan ja tulostetaan listan alkioita.
+
+                    </br></br>
+                    <script>
+                        createReplExercise(`
+                            Tässä esimerkissä luodaan lista, lisätään sinne
+                            alkioita ja tulostetaan listan alkioita.
+                            `,
+                            "esimerkki1", "Esimerkki 1: Lista ja sen alkiot",
+                            "https://repl.it/@hilipatiheijaa/listaesimerkki1?lite=true")
+                    </script>
+                    </br></br>
+
+                    Listaa on usein ikävä käydä läpi erikseen, etenkin jos listassa on paljon
+                    alkioita. Listaa voi kuitenkin käydä ohjelmallisesti helposti läpi
+                    toistolauseella eli for-loopilla. Katso esimerkki.
+                    </br></br>
+                    <script>
+                        createReplExercise(`
+                            Tässä esimerkissä käydään listan alkiot läpi for-loopilla eli toistolauseella.
+                            `,
+                            "esimerkki2", "Esimerkki 2: Lista ja toistolause",
+                            "https://repl.it/@hilipatiheijaa/forlistaesimerkki1?lite=true")
+                    </script>
+                    </br></br>
+
+                    For-loopilla voi myös käydä läpi generoituja eli automaattisesti
+                     kehitettyjä alkioita,
+                     jolloin ei tarvitse
+                    määrittää käsin listan sisältöä. Numeroja voi generoida pythonin komennolla
+                    <code>range(alku, loppu + 1)</code>
+                    </br></br>
+                    <script>
+                        createReplExercise(`
+                            Tässä esimerkissä käydään generoituja numeroita toistolauseella.
+                            `,
+                            "esimerkki3", "Esimerkki 3: Toistolause ja generoidut numerot",
+                            "https://repl.it/@hilipatiheijaa/forrangeesimerkki1?lite=true")
+                    </script>
+                    </br></br>
+
+                    </br></br>
+                    <script>
+                        createReplExercise(`
+                            Tässä esimerkissä käydään generoituja numeroita toistolauseella.
+                            `,
+                            "tehtava1", "Tehtävä 1: Toistolause ja generoidut numerot",
+                            "https://repl.it/@hilipatiheijaa/forrangetehtava1?lite=true")
+                    </script>
+                    </br></br>
+
+                    Toisto- ja listatehtäviä tulee lisää myöhemmin.
+                    Voit harjoitella toistoa <a href=turtle.html>python turtlella</a>
+                    tai <a href=https://koodariksi.fi/>sivulla koodariksi.fi</a> (vaatii kirjautumisen, toisto tulee luvussa 4)
                   </br></br>
                 </div>
             </div>

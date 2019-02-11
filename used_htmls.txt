@@ -1,0 +1,4 @@
+index.html
+turtle.html
+perusasiat/*.html
+toistoja_ja_tietorakenteita/*.html
