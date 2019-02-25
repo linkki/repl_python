@@ -6,5 +6,11 @@ import testi # Älä muokkaa tätä riviä!
 
 
 
+
+
+
+
+
+
 # Alla olevalla rivillä tarkistetaan menikö suoritus oikein (älä muokkaa sitä!)
 testi.aja()
