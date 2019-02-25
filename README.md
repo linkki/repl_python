@@ -19,6 +19,9 @@ tai
 
 ja takaisin produktioon: ```./basepath prod``` -> basepath='https://linkki.github.io/repl_python'
 
+Sivut saa pyörimään localhostiin esim. komennolla ```python3 -m http.server``` projektin juurihakemistossa.
+
+Päivittämällä repon, muutokset tulevat automaagisesti voimaan.
 
 ## Epämääräistä järjestelyä copypasten vähennystä varten
 Eri sivujen yhteinen html löytyy tiedostosta template.html.
