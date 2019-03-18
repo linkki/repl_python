@@ -23,7 +23,7 @@ function createReplExercise(content, id, name, src) {
   </div>`
 
   const frame = `
-    <iframe height="777px" width="100%" src="${src}" scrolling="no" frameborder="no"
+    <iframe height="1000px" width="100%" src="${src}" scrolling="no" frameborder="no"
     allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals">
     </iframe>
    </br>`

@@ -48,7 +48,7 @@
                 <div data-scrollreveal="wait 0.5s and then ease-in-out 50px" class="col-md-6 col-md-offset-3">
 
                     <div class="align-center">
-                        <h2 class="main-text"> LISTA </h2>
+                        <h2 class="main-text"> SANAKIRJA </h2>
 
                     </div>
                 </div>
@@ -60,101 +60,76 @@
             <div class="row">
                 <div class="">
                     <!-- CONTENT HERE -->
-                    <h2>Lista</h2>
-                    Lista on ensimmäinen pythonin tietorakenne johon tutustumme.
-                    Tietorakenne tarkoittaa datan eli tiedon tallenustapaa,
-                    joka mahdollistaa datan helpon käyttämisen.
+                    <h2>Python Dictionary eli sanakirja</h2>
+                      Eräs tärkeä ja paljon käytetty tietorakenne Pythonissa on dictionary, suomeksi
+                      sanakirja.
                     </br></br>
-                    Lista on kätevä tietorakenne, koska sen avulla voi helposti
-                    tallentaa ja käydä läpi suuria määriä asioita ohjelmakoodissa.
+                      Sanakirja koostuu avaimista ( englanniksi key ) ja arvoista (englanniksi value).
+                      Sanakirjan avaimia voi ajatella hakusanoina, joilla saa haettua sanakirjasta
+                      avainta vastaavan arvon.
                     </br></br>
-                    Listaan tallennettuja asioita kutsutaan listan alkioiksi.
-                    Seuraavassa esimerkissä tarkastellaan miten lista luodaan ja tulostetaan listan alkioita.
+                    Tässä vaiheessa tiedetään, että Python lista luodaan käyttämällä hakasulkeita <code>[]</code>.
+                    Sanakirjan voi luoda vastaavasti aaltosulkeilla <code>{}</code>.
 
                     </br></br>
+                    <div class="align-center">
+                      <img src='../assets/img/dict.png' width=600 height=80 style="border-radius: 5px">
+                    </div>
+                    </br></br>
+
+                    Sanakirjan avain-arvo-parit erotetaan toisistaan pilkuilla samoin kuin listassa.
+                    Avain-arvo-pari merkitään käyttämällä kaksoispistettä: <code>avain: arvo</code> aivan kuten ylläolevan kuvan
+                    koodissa.
+
                     <script>
                         createReplExercise(`
-                            Tässä esimerkissä luodaan lista, lisätään sinne
-                            alkioita ja tulostetaan listan alkioita.
-                            `,
-                            "esimerkki1", "Esimerkki 1: Lista ja sen alkiot",
-                            "https://repl.it/@hilipatiheijaa/listaesimerkki1?lite=true")
+                         Tässä esimerkissä nähdään miten python dictionary eli sanakirja toimii.
+                     `,
+                            "esimerkki1", "Esimerkki 1: Sanakirja", "https://repl.it/@hilipatiheijaa/dictesimerkki1?lite=true")
                     </script>
                     </br></br>
-
-                    Listaa on usein ikävä käydä läpi erikseen, etenkin jos listassa on paljon
-                    alkioita. Listaa voi kuitenkin käydä ohjelmallisesti helposti läpi
-                    toistolauseella eli for-loopilla. Katso esimerkki.
-                    </br></br>
                     <script>
                         createReplExercise(`
-                            Tässä esimerkissä käydään listan alkiot läpi for-loopilla eli toistolauseella.
-                            `,
-                            "esimerkki2", "Esimerkki 2: Lista ja toistolause",
-                            "https://repl.it/@hilipatiheijaa/forlistaesimerkki1?lite=true")
-                    </script>
-                    </br></br>
-
-                    <script>
-                        createReplExercise(`
-                            Tee lista jossa on kolme merkkijonoa: 'apina', 'banaani' ja 'cembalo'.
-                            `,
-                            "tehtava1", "Tehtävä 1: Merkkijonolista",
-                            "https://repl.it/@hilipatiheijaa/merkkijonolistatehtava?lite=true")
+                         Tässä tehtävässä sinun pitää itse luoda python sanakirja, jossa on ruokien hintoja:
+                         </br>avain: 'kebab riisillä', arvo: 7,
+                         </br>avain: 'hummeri', arvo: 20,
+                         </br>avain: 'pizza margharita', arvo: 8,
+                         </br>avain: 'kaurapuuro', arvo: 3
+                     `,
+                            "tehtava1", "Tehtävä 1: Sanakirjan luominen", "https://repl.it/@hilipatiheijaa/dicttehtava1?lite=true")
                     </script>
                     </br></br>
 
                     <script>
                         createReplExercise(`
-                            Listassa voi olla kerralla monentyyppisiä muuttujia. Olemme tähän asti
-                            käyttäneet merkkijonoja (esim. "auto") ja kokonaislukuja (esim. 1).
-                            <br/><br/>
-                            Tee lista jossa on kaksi merkkijonoa ja kolme kokonaislukua.
-                            Merkkijonot ja luvut voivat olla mitä tahansa, kunhan ne ovat oikeantyyppisiä.
-                            `,
-                            "tehtava2", "Tehtävä 2: Lista, jossa on kahdenlaisia muuttujia",
-                            "https://repl.it/@hilipatiheijaa/merkkijonojanumerolistatehtava?lite=true")
-                    </script>
-                    </br></br>
-                    <script>
-                        createReplExercise(`
-                            Tulosta listan alkiot järjestyksessä omille riveilleen esimerkiksi for-loopilla.
-                            `,
-                            "tehtava3", "Tehtävä 3: Listan alkioiden tulostaminen",
-                            "https://repl.it/@hilipatiheijaa/listatulostustehtava?lite=true")
-                    </script>
-                    </br></br>
-                    For-loopilla voi myös käydä läpi generoituja eli automaattisesti
-                     kehitettyjä alkioita,
-                     jolloin ei tarvitse
-                    määrittää käsin listan sisältöä. Numeroita voi generoida pythonin komennolla
-                    <code>range(alku, loppu + 1)</code>
-                    </br></br>
-                    <script>
-                        createReplExercise(`
-                            Tässä esimerkissä käydään toistolauseella läpi range()-komennolla
-                            generoituja numeroita.
-                            `,
-                            "esimerkki3", "Esimerkki 3: Toistolause ja generoidut numerot",
-                            "https://repl.it/@hilipatiheijaa/forrangeesimerkki1?lite=true")
+                         Sanakirjaa voi muokata muun muassa asettamalla uusia arvoja sanakirjaan.
+                     `,
+                            "esimerkki2", "Esimerkki 2: Sanakirjan muokkaaminen", "https://repl.it/@hilipatiheijaa/dictesimerkki2?lite=true")
                     </script>
                     </br></br>
 
                     <script>
                         createReplExercise(`
-                            Tehtävänäsi on tulostaa numerot yhdestä tuhanteen.
-                            `,
-                            "tehtava4", "Tehtävä 4: Toistolause ja generoidut numerot",
-                            "https://repl.it/@hilipatiheijaa/forrangetehtava1?lite=true")
+                         Välillä on tärkeää tietää onko sanakirjassa jokin hakusana tai sitä vastaava arvo olemassa.
+                         Sen selvittäminen onnistuu <code>in</code>-operaattorilla.
+                     `,
+                            "esimerkki3", "Esimerkki 3: Hakusanojen olemaossaolon tarkastus", "https://repl.it/@hilipatiheijaa/dictesimerkki3?lite=true")
+                    </script>
+                    </br></br>
+                    <script>
+                        createReplExercise(`
+                         </br></br>
+                         Tee ohjelma, joka kysyy sanoja ja pitää kirjaa sanojen esiintymismääristä sanakirjassa.
+                         Syötteen kysyminen on annettu valmiiksi.
+                         </br>Ohjelma ei kuitenkaan vielä osaa lisätä sanoja sanakirjaan eikä kasvattaa niiden määrää vielä.
+                         </br></br>
+                         Täydennä ohjelma toimivaksi.
+                         </br></br>
+                     `,
+                            "tehtava2", "Tehtävä 2: Sanalaskuri", "https://repl.it/@hilipatiheijaa/sanalaskuri?lite=true")
                     </script>
                     </br></br>
 
-                    Toisto- ja listatehtäviä tulee lisää myöhemmin.
-                    Voit harjoitella toistoa <a href=turtle.html>python turtlella</a>
-                    tai <a href=https://koodariksi.fi/>sivulla koodariksi.fi</a> (vaatii kirjautumisen, toisto tulee luvussa 4)
-                    <h2><a href="toistoja_ja_tietorakenteita/sanakirja.html">Seuraavaan osioon pääsee painamalla tästä</a></h2>
-
-                  </br></br>
                 </div>
             </div>
         </div>
