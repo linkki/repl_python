@@ -46,5 +46,7 @@ Huom. skriptit toiminevat vain linuxilla.
 Lisää materiaalia
  - Enemmän tehtäviä
    - erityisesti vertailuoperaattoille ei ole tarpeeksi tehtäviä
-
+ - 2-dim silmukka
+ - funktiot
+ - pygame?
 Parempi prod/dev säätö?
