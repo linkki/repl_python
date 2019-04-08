@@ -89,10 +89,17 @@
                     </br></br>
                     Taulukon luomiseen ja läpikäymiseen käytetään sisäkkäisiä for-silmukoita,</br>
                     esim.</br>
-                    <code>for i in range(n):</br>&emsp;for j in range(n):
-                          </br>&emsp;&emsp; lista[i][j] = 0
+
+                    <code>
+                    # Luodaan taulukko
+                    </br>taulukko = []
+                    </br>for i in range(n):
+                    </br>&emsp;taulukko.append([]):
+                    </br>&emsp;for j in range(n):
+                    </br>&emsp;&emsp; taulukko[i].append(j))
                     </code>
                     </br></br>
+
                     <script>
                         createReplExercise(`
                             Luo kaksiulotteinen taulukko Pythonin listoilla, jossa on 5 riviä ja 5 saraketta.
@@ -104,8 +111,17 @@
                             "https://repl.it/@hilipatiheijaa/2darrtehtava1?lite=true")
                     </script>
                     </br></br>
-                    On tärkeää osata tulostaa taulukon alkioita järkevällä tavalla, jotta voi tarkastaa
+                    On hyödyllistä osata tulostaa taulukon alkioita järkevällä tavalla, jotta voi tarkastaa
                     onko taulukossa jotakin pielessä ilman suuria päänvaivoja.
+
+                    <code>
+                    # Tulostetaan taulukko
+                    </br>for i in range(n):
+                    </br>&emsp;for j in range(n):
+                    </br>&emsp;&emsp; print(taulukko[i][j], end=' ')
+                    </br>&emsp;print():
+                    </code>
+
                     </br></br>
                     <script>
                         createReplExercise(`
@@ -140,13 +156,36 @@
                             </pre>
                             </br></br>
                             Vinkki: Kokeile asettaa jokaisen taulukon alkioksi <code>(rivinumero) * (sarakenumero)</code>
+                            Voit myös katsoa mallia edellisen osion kertotauluesimerkistä.
                             </br></br>
                             `,
                             "tehtava2", "Tehtävä 2: Kertotaulu",
                             "https://repl.it/@hilipatiheijaa/kertotaulutehtava?lite=true")
                     </script>
                     </br></br>
-
+                    <script>
+                        createReplExercise(`
+                            Tässä on esimerkki kaksiulotteisten taulukkojen hyödyntämisestä
+                            pelissä. Pelin tekemiseen on käytetty pygame-kirjastoa.
+                            </br></br>
+                            Pelissä liikutaan oikealla ja vasemmalla nuolinäppäimellä.
+                            </br></br>
+                            Kun peli alkaa, pelin ruudua pitää mahdollisesti klikata, että nuolinäppäimet toimivat.
+                            </br></br>
+                            Jos peli tökkii tai toimii muuten kömpelösti,
+                            voit kokeilla ajaa ohjelma omalla koneellasi.
+                            Kopioi koodi tiedostoon joka päättyy <code>.py</code>
+                            Aja tiedosto terminaalissa komennolla <code>python3 tiedosto.py</code> ja pelin
+                            pitäisi käynnistyä.
+                            </br>
+                            Peli tarvitsee toimiakseen pygamen, jos koneella ei ole pygamea,
+                            sen saa asennettua komennolla <code>pip3 install pygame</code>
+                            </br></br>
+                            `,
+                            "esimerkki3", "Esimerkki 3: Väistelypeli",
+                            "https://repl.it/@hilipatiheijaa/vaistelypeli?lite=true")
+                    </script>
+                    </br></br>
                 </div>
             </div>
         </div>
