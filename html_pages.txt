@@ -1,4 +1,5 @@
 index.html
 turtle.html
+funktiot.html
 perusasiat/*.html
 toistoja_ja_tietorakenteita/*.html
